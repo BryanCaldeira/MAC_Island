@@ -1,0 +1,124 @@
+.btn {
+  text-align: left;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.primary_btn {
+  background-color: var(--primary-btn-clr-hvr);
+  background-image: linear-gradient(-45deg, transparent 50%, var(--primary-btn-clr) 50%);
+  background-size: 250% 100%;
+  background-position: bottom left;
+  transition: background-position 1s ease-out, color 0.5s ease-out;
+}
+
+.secondary_btn {
+  padding: 10px 0;
+  color: var(--secondary-btn-clr);
+}
+
+.consultation_btn {
+  margin-top: 50px;
+  background-color: var(--bg-clr);
+  padding: 10px 20px;
+  font-weight: 600;
+  color: var(--primary-btn-clr);
+}
+
+.consultation_btn img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.consultation_btn_bg {
+  margin: 0;
+  color: var(--bg-clr);
+  background-color: var(--primary-btn-clr-hvr);
+  transition: background-position 0.5s ease-out, color 0.5s ease-out;
+}
+
+.consultation_btn_bg img {
+  width: 24px;
+  height: 24px;
+  /* Change arrow color to white */
+  filter: grayscale(1) invert(1) brightness(2.5) contrast(1);
+}
+
+.animated_line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-btn-clr-hvr);
+  background-image: linear-gradient(45deg, transparent 50%, var(--primary-btn-clr) 50%);
+  background-size: 250% 100%;
+  background-position: right;
+  transition: background-position 1s ease-out, color 0.5s ease-out;
+}
+
+.secondary_btn:hover ~ .animated_line {
+  background-position: left;
+}
+
+.secondary_btn:focus ~ .animated_line {
+  background-position: left;
+}
+
+.secondary_btn:hover .arrow_down {
+  width: 0;
+  margin-left: 0;
+}
+
+.secondary_btn:focus .arrow_down {
+  width: 0;
+  margin-left: 0;
+}
+
+.menu_item_sub_btn {
+  color: var(--body-clr);
+}
+
+.menu_item_sub_btn:hover {
+  color: var(--secondary-btn-clr);
+  border-bottom: 1px solid var(--secondary-btn-clr);
+}
+
+.menu_item_sub_btn:hover .arrow_link {
+  filter: none;
+}
+
+.arrow_link {
+  width: 1rem;
+  height: 1rem;
+  filter: brightness(0%);
+  margin-right: 10px;
+}
+
+.arrow_down {
+  width: 15px;
+  height: 9px;
+  margin-left: 10px;
+  transition: width 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .primary_btn:hover {
+    background-position: bottom right;
+  }
+}

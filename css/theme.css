@@ -1,0 +1,18 @@
+/* Default Color Palette */
+
+:root {
+  --bg-clr: #ffffff;
+  --header-clr: #ffffff;
+  --line-clr: #e7e7e7;
+  --dark-gray: #61594e;
+  --heading-clr: #d71921;
+  --body-clr: #000000;
+  --primary-btn-clr: #d71921;
+  --primary-btn-clr-hvr: #850200;
+  --primary-btn-clr-txt: #ffffff;
+  --secondary-btn-clr: #d71921;
+  --tertiary-btn-clr: #000000;
+  --tertiary-btn-clr-hvr: #d71921;
+  --btn-line-clr: #d71921;
+  --btn-line-clr-hvr: #850200;
+}
